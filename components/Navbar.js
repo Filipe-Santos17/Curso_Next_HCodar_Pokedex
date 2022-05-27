@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center mb-4 py-2 px-3 text-white bg-gray-500">
+    <nav className="flex justify-between items-center h-16 mb-4 py-2 px-3 text-white bg-gray-500">
         <div className="flex justify-center items-center">
             <Image src="/images/pokeball.png" alt="Pokenext logo" width="30" height="30"/>
             <h1 className="ml-1 text-xl">PokeNext</h1>
