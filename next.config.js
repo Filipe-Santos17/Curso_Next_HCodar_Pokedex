@@ -1,6 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
+  images:{
+    domain : ["cdn.traction.one"], //permite adicionar dados de um servidor que não é seu
+  }
 }
 
-module.exports = nextConfig
