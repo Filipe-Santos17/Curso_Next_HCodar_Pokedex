@@ -1,0 +1,22 @@
+--server Render app, otimiza os serviços do SEO
+--Criado pela Zeid com codigo aberto
+
+//Sem dependência
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+npx tailwindcss style.css -o outpout.css
+
+//Com dependência
+metodo 1:
+1º npx create-next-app app
+2º npm i -D tailwindcss postcss autoprefixer
+3º npx tailwindcss init -p
+4º content : ["./pages/**/*.{js,ts}", "./components/**/*.{js,ts}"]
+5º style.css {
+	@tailwind base
+	@tailwind components
+	@tailwind utilities
+}
+
+metodo 2:

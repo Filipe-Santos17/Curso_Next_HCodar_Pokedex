@@ -1,0 +1,60 @@
+Documentação:
+---https://nextjs.org/docs/getting-started
+
+Next.Js:
+-Next é um framerwork react
+-Permite que o projeto esteja pronto para produção
+-Proporciona um Server Side Rendering e melhora sua nota no SEO 
+
+Como utilizar:
+-npx create-next-app app
+-npm run dev(liga)
+
+Vantagens do Next:
+-O servidor reage a qualquer mudança no projeto, ideal para fazer debug
+-Pasta pages contém os arquivos que serão exibidos(index é o principal)
+
+
+Arquivos extras:
+--> next.config.js == arquivo de configuração do next
+--> .eslint.json == 
+--> Pasta .next == contém o projeto gerado em tempo real
+--> Pasta pages == local ondem contém todos os arquivos que serão utilizados
+
+-- O next apenas vem com next, react e react-dom
+
+Pagina e roteamento:
+-Em next, os arquivos iram gerar seus proprios roteamentos(index = "/")
+-Os nomes dos arquivos geram suas proprias urls (ex: Arquivo "about.js" = Url "/about")
+-os links no next podem ser links normais do proprio html, diferente do react
+
+Nested Routes:
+-Rotas compostas, arquivos dentro de uma pasta, assim pode se criar uma rota mais complexa 
+-Acessando assim os arquivos dentro delas
+-Se colocar um index dentro da pasta ele vira o arquivo base (ex: 'api/index' = url 'api/')
+
+Navegando entre Paginas:
+-Componente Link(semelhante ao React-router mas proprio do Next, link href="" , import link from 'next/link')
+
+Novos Componentes:
+-Possivel criar da mesma maneira que no react
+-Padrão: 
+-- 1º criar uma Pagina components e inserir os arquivos // fora de pages
+-- 2º exportar os components para dentro dos arquivos pages 
+
+Componentes Padrão:
+-Quando os mesmos components se repetem diversas vezes(ex: NavBar e Footer) utiliza-se o comp.Layout
+-Sempre é chamado dentro do arquivo app.js
+-Crie o arquivo na pasta components e envolva a função por fora do component principal
+-> return (<new component> <component{...pageProps}> </new component>)
+
+MetaDados no NextJs:
+-Informações como meta, title entre outros estão dentro do parâmetro Head(next/Head)
+-Coloque no index e pode variar para cada rota
+
+Assets:
+-Sempre ficam dentro da pasta public
+-Para conectar imagens e arquivos de midia pode se partir do public
+(ex: "./imgs/image.png", como se estivesse dentro de public)
+-Next possui o component Image integrado para isso, ele necessita de 3 argumentos: 
+src, alt, width ou heigth 
